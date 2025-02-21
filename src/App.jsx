@@ -26,19 +26,29 @@ function App() {
 
    return (
       <div className="flex flex-col items-center">
+      
          {books.map((book) => (
+         
             <div key={book.id}>
-               <div>{book.title}</div>
+
+               <div className="">{book.title}</div>
+               
                <div>By {book.author}</div>
+               
                <div>Published by {book.publisher}</div>
+               
                <div>
                   <strong>Rating:</strong> {book.rating}
                </div>
+               
                <div>{book.description}</div>
-               <div><img className="w-[300px]" src={`data:image/png;base64,${book.imageBase64}`} alt="Book Image"/>
-               </div>
+               
+               <div><img className="w-[300px]" src={`data:image/png;base64,${book.imageBase64}`} alt="Book Image"/></div>
+
             </div>
+
          ))}
+
       </div>
    )
 }
