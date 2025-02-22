@@ -29,7 +29,7 @@ function BookView() {
                <div className="flex flex-col items-start text-2xl font-medium">{book.title}</div>
                <div className="flex text-sm text-gray-400">by {book.author}</div>
                <div className="border-t-2 mt-2 mb-3 border-gray-200"></div>
-               <div className="flex font-light tracking-wider text-justified text-sm text-gray-800 leading-6 mb-4" style={{fontFamily:'Google Sans'}}>{book.description}</div>
+               <div className="flex font-light tracking-wider text-justified text-sm text-black leading-6 mb-4" style={{fontFamily:'Google Sans'}}>{book.description}</div>
                {/*<div className="flex text-gray-600 mb-2">Published by {book.publisher}</div>*/}
                {/*<div><img className="w-[300px]" src={`data:image/png;base64,${book.imageBase64}`} alt="Book Image"/></div>*/}
             </div>
